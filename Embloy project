@@ -1,0 +1,64 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package embloyee;
+
+/**
+ *
+ * @author EL-masreya
+ */
+public class Embloyees {
+    int emp_id ;
+    String ename ;
+    String depart ;
+    double salary ;
+    double bonus ;
+    boolean resident ;
+    public Embloyees ()
+            
+            {
+            emp_id =100;
+            ename ="no name";
+            salary =3000;
+            bonus = 500;
+            depart ="not asigned yet";
+            resident = true ;
+            
+            }
+    public Embloyees (int idno , String n)
+         {
+            emp_id =idno;
+            ename =n ;
+         
+         }
+    public Embloyees(int idno,String n,boolean r)
+          {
+             this(idno,n);
+            resident =r;
+    
+    
+          }
+    public Embloyees(int idno,String n,boolean r,double b,String de,double s)
+          {
+             this(idno,n,r);
+            bonus=b;
+            depart=de;
+            salary=s;
+    
+    
+          }
+    
+    public void print_emp_data()
+    {
+     
+        System.out.println("ID"+emp_id);
+        System.out.println("Name"+ename);
+        System.out.println("depart"+depart);
+        System.out.println("salary"+salary);
+        System.out.println("Bonus"+bonus);
+        System.out.println("Resident"+resident);
+    }
+    
+}

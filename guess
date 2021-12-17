@@ -1,0 +1,40 @@
+
+package javaapplication26;
+
+
+import java.util.Scanner;
+public class JavaApplication26 {
+
+    
+    public static void main(String[] args) {
+        
+       Scanner input =new Scanner(System.in);
+       int guess;
+       int rand;
+       rand  =(int)(Math.random()*100);
+       boolean stillplaying =true;
+       System.out.println("the genereted number is"+rand);
+       while(stillplaying)
+       {
+       System.out.println("guess a number");
+       guess=input.nextInt();
+       if (guess<rand)
+           System.out.println("guess is small as real");
+       else 
+           if (guess>rand)
+               System.out.println("guess is lagest than real");
+       else
+               System.out.println("you win!!!");
+       stillplaying=false;
+       
+       
+       
+       
+       
+       }
+       
+       
+       
+    }
+    
+}

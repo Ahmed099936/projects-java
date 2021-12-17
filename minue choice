@@ -1,0 +1,67 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package javaapplication4;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author EL-masreya
+ */
+public class JavaApplication4 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner input =new Scanner(System.in);
+             
+              
+               int number1;
+               int number2;
+               int choice;
+               
+               
+                 System.out.println("Enter your choice");
+                 System.out.println("1.Add two number");
+                 System.out.println("2.get the double of numbers");
+                 System.out.println("Get the square of numbers");
+                 choice=input.nextInt();
+                 switch(choice)
+                         {
+                     case 1:
+                         System.out.println("Enter two numbers integres");
+                         number1=input.nextInt();
+                         number2=input.nextInt();
+                         System.out.println(number1+number2);
+                         break;
+                         
+                         case 2:
+                         System.out.println("Enter two numbers integres");
+                         number1=input.nextInt();
+                         number2=input.nextInt();
+                         System.out.println(number1-number2);
+                         break;
+                         case 3 :
+                         System.out.println("Enter  umber integres");
+                       
+                            
+                         number1=input.nextInt();
+                        
+                         if (number1>0)
+                              
+                         System.out.println(number1*number1);
+                         break;
+                         default: 
+                            
+                         System.out.println("invalid number");
+                     
+                 }
+                 
+                 
+    }
+    
+}

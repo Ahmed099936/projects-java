@@ -1,0 +1,45 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package javaapplication32;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author EL-masreya
+ */
+public class JavaApplication32 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner input =new Scanner(System.in);
+        int c=1;
+        int sum=0 ;
+        int num;
+        while (c<=7  )
+        {
+        
+       System.out.println("Enter apositive number  0.to Exist"+c);
+       num=input.nextInt();
+       if(num<0)
+       {
+        System.out.println("this negative number is not allowed ");
+       continue;
+       }
+       
+           sum+=num;
+       c ++;
+       
+    
+        
+        }
+        System.out.println("sum="+sum);
+        
+    }
+    
+}

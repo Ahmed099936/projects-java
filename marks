@@ -1,0 +1,123 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package javaapplication2;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author EL-masreya
+ */
+public class JavaApplication2 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Scanner input =new Scanner(System.in);
+             
+              
+               //int number1;
+              // int number2;
+               
+              // System.out.print ln("enter 2 number");
+              // number1 =input.nextInt();
+              // number2 =input.nextInt();
+             // int marks ;
+              //System.out.println("Enter your marks");
+              //System.out.println("Enter your numbers");
+              
+              //marks =input.nextInt();
+              
+             // if (marks>=90)
+             // System.out.println("you get A ");   
+           //        
+           // int marks ;
+            //System .out .println("Enter your marks");
+            
+             // marks= input.nextInt() ;
+              
+              //if (marks>=90 && marks <=100)
+             // System.out.println("A");
+             // else if (marks>=80 && marks <90)
+             // System.out.println("B");  
+             // else if (marks>=70 && marks <80)
+              //System.out.println("C");
+             //  else if (marks>=60 && marks <70 )
+                   
+             // System.out.println("D");
+              // else 
+                // System.out.println("you get f"); 
+              //  char grade ;
+                
+           
+           // System.out.println("Enter your Grade");
+           // grade =input.next().charAt(0);
+           
+          // switch (grade)
+          // {
+           
+          // case 'A':
+               //    System.out.println("Exlant");
+              //     break;
+           
+          // case 'B':
+                 //  System.out.println("Verey good");
+                 //  break;
+          // case 'c':
+          //         System.out.println("Good");
+                 //  break;
+          // case 'D':   
+                  // System.out.println("Fair");
+                  // break;
+          // case 'f':
+                  // System.out.println("failed");
+                  // break;
+                   //default:
+                   //  System.out.println("invalid grade");   
+         //  }
+           
+         int choise ;
+         System.out.println("Enter your choice ");
+         System.out.println("1.add two numbers ");       
+          System.out.println("2.get the double of possitive number");      
+              System.out.println("3.get the square of anumber"); 
+              choise= input .nextInt();
+              switch (choise)
+              {
+                  case 1:
+                      int num1;
+                      int num2;
+                      System.out.println("Enter two number ");
+              num1 =input.nextInt();
+              num2 =input.nextInt();
+         System.out.println(num1 + num2);
+              break;
+              case 2:
+                      
+                      System.out.println("Enter positive  number ");
+                      
+              num1 =input.nextInt();
+              if (num1 >0)
+            //  num2 =input.nextInt();
+         System.out.println(num1 * num1) ;       
+              break;
+              
+               case 3:
+                      
+                      System.out.println("Enter two number ");
+              num1 =input.nextInt();
+              num2 =input.nextInt();
+         System.out.println(num1 - num2);
+              break;
+               default:
+                System.out.println("invalid input choice");   
+              
+              }  
+    }
+
+}
